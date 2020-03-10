@@ -31,7 +31,7 @@ def check_keydown_events(event, paddle, ball, settings, stats, msg):
 		sys.exit()
 
 def check_keyup_events(event, paddle):
-	#Responses to key releases and mouse events
+	#Responses to key releases
 	if event.key == pygame.K_RIGHT:
 		paddle.moving_right = False
 	elif event.key == pygame.K_LEFT:
@@ -86,9 +86,11 @@ def build_wall(settings, screen, bricks):
 	
 """
 Purpose of update_bricks():
-Remove any brick that collides with the ball
-and add 1 to the score for any brick hit
-Add the right amount of bricks if more than one is hit
+- Remove any brick that collides with the ball and add settings.brick_points 
+to the score for any brick hit.
+- Add the correct score if more than brick is hit.
+- Creates a new wall if all of the bricks are destroyed.
+- Also increases the dynamic settings of the game (when all bricks are destroyed).
 """	
 def update_bricks(bricks, ball, screen, settings, sb, stats):	
 	#Check if the Ball (sprite) hits any of the bricks (Group)
@@ -119,6 +121,11 @@ def check_hi_score(stats, sb):
 		stats.hi_score = stats.score
 		sb.prep_hi_score()
 	
+"""
+This is where I am currently trying to find a fix for when the lives run out.
+I want to display the game over message in this case, and the stats for score,
+level and lives should be reset should the player choose to start another game.
+"""
 def update_lives(paddle, ball, bricks, settings, screen, sb, stats):
 	#-1 to self.lives_left if ball touches bottom of screen
 	if ball.rect.bottom >= settings.screen_height:
