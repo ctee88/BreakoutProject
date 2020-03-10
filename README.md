@@ -9,6 +9,7 @@ Play my version of the famous Arkanoid/Breakout game!
 - Dynamic level settings which change based on the current level
 
 - 5 lives and 1 life is lost when the ball touches the bottom of the screen
+- Game ends when lives reach 0 and player has the option to restart
 
 # Requirements
 - Created on Python 3.8.1
