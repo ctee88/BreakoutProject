@@ -17,7 +17,7 @@ Play my version of the famous Arkanoid/Breakout game!
 - Developed on Windows 10, so presumably the game should run on any Windows system
 
 ## Installing instructions for Windows 10
-PyGame is notoriously difficult to install! I have done my best at trying to explain how to install PyGame.
+PyGame is notoriously difficult to install! I will do my best at trying to explain how to install PyGame:
 
 
 Locate the appropriate version of PyGame here:
