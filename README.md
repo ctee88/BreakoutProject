@@ -52,7 +52,7 @@ See the relevant files for more detailed annotations. My project is made up of m
 - main.py - Executable code to run the game is located here
 - /images - Contains the images used as the paddle and bricks. Sourced from: https://opengameart.org/
 
-# Limitation
+# Limitations
 - The game only works for the specified screen dimensions. If changed, there will be large spaces without bricks.
 - Only one type of brick.
 - High score does not save in between executions of the game. In other words, the high score is the highest score of the current instance of the game running and not the highest score of all of the instances of the game that have run. (I hope that makes sense)
