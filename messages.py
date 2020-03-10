@@ -27,6 +27,7 @@ class Messages():
 		start_str = "Press SPACE to launch ball"
 		self.start_image = self.font.render(start_str, True, self.font_colour,
 			self.settings.bg_colour)
+		
 		self.start_rect = self.start_image.get_rect()
 		self.start_rect.centerx = self.screen_rect.centerx
 		self.start_rect.y = self.y_pos
@@ -37,6 +38,7 @@ class Messages():
 		game_over_str = "GAME OVER! Press SPACE to play again or Q to quit"
 		self.game_over_image = self.font.render(game_over_str, True, self.font_colour,
 			self.settings.bg_colour)
+		
 		self.game_over_rect = self.game_over_image.get_rect()
 		self.game_over_rect.centerx = self.screen_rect.centerx
 		self.game_over_rect.y = self.y_pos
