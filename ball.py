@@ -55,4 +55,3 @@ class Ball(pygame.sprite.Sprite):
 	def draw_ball(self):
 		#Draw the ball at its current location
 		pygame.draw.rect(self.screen, self.colour, self.rect)
-		
