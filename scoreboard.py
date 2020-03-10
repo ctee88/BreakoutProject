@@ -26,7 +26,7 @@ class Scoreboard():
 	so that it can be drawn to the screen
 	"""
 	def prep_info(self):
-		#score_str = str(self.stats.score)
+		#Change score and lives to be displayed as an image (to be drawn)
 		score_str = "{:,}".format(self.stats.score)
 		lives_str = str(self.stats.lives_left)
 		self.info_image = self.font.render("SCORE: {} LIVES: {}".format(score_str, lives_str), 
