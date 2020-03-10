@@ -38,9 +38,3 @@ class Settings():
 		self.ball_y_speed *= self.ball_y_speedup_scale
 		self.paddle_speed *= self.paddle_speedup_scale
 		self.brick_points *= self.brick_points_scale
-		
-		
-		
-		
-		
-		
