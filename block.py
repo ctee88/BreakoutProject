@@ -1,31 +1,21 @@
 #Author: Cameron Tee
 #Date: 07/03/2020
-#Purpose: A class managing the behaviour of the blocks
+#Purpose: A class managing the behaviour of the bricks
 
 import pygame
-from pygame.sprite import Sprite
 
-class Brick(Sprite):
+class Brick(pygame.sprite.Sprite):
 	
 	def __init__(self, settings, screen):
-		"""Initialize the block and its starting position"""
 		super().__init__()
 		self.screen = screen
-		self.settings = settings
 		
-		#Load the block image and get its rect attribute
-		self.image = pygame.image.load('images/block.bmp')
+		#Load the brick image and get its rect attribute
+		self.image = pygame.image.load('images/brick_1.bmp')
 		self.rect = self.image.get_rect()
-		
-		#Start each block at the top left of the screen
-		self.rect.x = self.rect.width
-		self.rect.y = self.rect.height
-		
-		#Store the exact position of the block
-		self.x = float(self.rect.x)
 	
 	def blitme(self):
-		"""Draw the block at its current location"""
+		#Draw the brick at its current location
 		self.screen.blit(self.image, self.rect)
 		
 		
