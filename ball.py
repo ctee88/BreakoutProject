@@ -4,7 +4,6 @@
 
 import pygame
 
-
 class Ball(pygame.sprite.Sprite):
 	
 	def __init__(self, settings, screen, paddle):
@@ -18,6 +17,7 @@ class Ball(pygame.sprite.Sprite):
 		self.center_ball(paddle)		
 		self.colour = settings.ball_colour
 		
+		#Construct screen width to see if touches the edges
 		self.screen_width = settings.screen_width
 		
 		#Movement flag
@@ -32,12 +32,13 @@ class Ball(pygame.sprite.Sprite):
 		if self.rect.left <= 0:
 			self.settings.ball_x_speed *= -1
 		
-		#Check whether the ball hits the paddle. Add 1 to ball's y co-ord
+		#Check whether the ball hits the paddle. Add 1 to ball's y co-ord (so it appears just above the paddle)
 		if self.rect.colliderect(paddle.rect):
 			self.rect.bottom = paddle.rect.top + 1
 			self.settings.ball_y_speed *= -1
 		
 	def center_ball(self, paddle):
+		#Center the ball in the correct position
 		self.rect.centerx = paddle.rect.centerx
 		self.rect.bottom = paddle.rect.top	
 			
@@ -46,6 +47,7 @@ class Ball(pygame.sprite.Sprite):
 		if self.moving == False:
 			self.center_ball(paddle)
 		if self.moving == True:
+		#Update the ball position when the ball is released
 			self.rect.x += self.settings.ball_x_speed
 			self.rect.y += self.settings.ball_y_speed
 			self.bounce(paddle)		
