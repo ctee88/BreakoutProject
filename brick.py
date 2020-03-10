@@ -17,5 +17,3 @@ class Brick(pygame.sprite.Sprite):
 	def blitme(self):
 		#Draw the brick at its current location
 		self.screen.blit(self.image, self.rect)
-		
-		
