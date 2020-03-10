@@ -2,7 +2,6 @@
 #Date: 06/03/2020
 #Purpose: A class storing all the settings for Breakout
 
-
 class Settings():
 
 	def __init__(self):
