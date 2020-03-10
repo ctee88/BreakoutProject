@@ -37,12 +37,13 @@ def run_game():
 	#Clock controlling the frequency of the screen updates
 	clock = pygame.time.Clock()
 	
-    #Begin the main loop for the game
+    	#Begin the main loop for the game
 	while True:
-		gf.check_events(paddle, ball, settings, stats, msg)
+		gf.check_events(paddle, ball, bricks, screen, settings, sb, stats, msg)
+		#Player should be able to move around the paddle before releasing the ball
 		if not stats.game_active:
 			paddle.update()
-			ball.center_ball(paddle)			
+			ball.center_ball(paddle)
 		
 		if stats.game_active:
 			paddle.update()
