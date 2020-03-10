@@ -12,22 +12,33 @@ Play my version of the famous Arkanoid/Breakout game!
 - Game ends when lives reach 0 and player has the option to restart
 
 # Requirements
-- Created on Python 3.8.1
+- Created on Python 3.8
 - Created using Python library - PyGame
 - Developed on Windows 10, so presumably the game should run on any Windows system
 
 ## Installing instructions for Windows 10
+### Python 3.8
+1) Locate the appropriate version of Python here:
+- https://www.python.org/downloads/
+
+2) Add the file to a known directory of your choice and execute the file. ((C:) drive most accessible)
+
+3) Run the command prompt and access the directory you chose in the previous step.
+
+4) Type ```python``` in to the terminal to check your version.
+
+### PyGame
 PyGame is notoriously difficult to install! I will do my best at trying to explain how to install PyGame:
 
 
-Locate the appropriate version of PyGame here:
+1) Locate the appropriate version of PyGame here:
 - https://bitbucket.org/pygame/pygame/downloads/
 
 or here if you can't find the correct version in the previous link:
 
 - https://www.lfd.uci.edu/~gohlke/pythonlibs/#pygame
 
-Copy the PyGame file into the same directory as the Breakout game and access this directory in the command prompt, then enter:
+2) Copy the PyGame file into the same directory as the Breakout game and access this directory in the command prompt, then enter:
 ```
 python -m pip install pygame
 ```
