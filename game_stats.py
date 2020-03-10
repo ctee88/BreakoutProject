@@ -1,6 +1,6 @@
 #Author: Cameron Tee
 #Date: 08/03/2020
-#Purpose: Class used to keep track of game statistics
+#Purpose: Class used to set some game statistics
 
 class GameStats():
 	
