@@ -22,9 +22,11 @@ class Scoreboard():
 		self.prep_level()
 		
 	"""
-	Change the text to be displayed as an image
-	so that it can be drawn to the screen
+	Purpose of prep_ methods:
+	Change the values into text so that they can be changed into
+	images which can then be drawn to the screen.
 	"""
+	
 	def prep_info(self):
 		#Change score and lives to be displayed as an image (to be drawn)
 		score_str = "{:,}".format(self.stats.score)
@@ -54,7 +56,7 @@ class Scoreboard():
 		self.level_image = self.font.render("LEVEL {}".format(level), True,
 			self.font_colour, self.settings.bg_colour)
 		
-		#Display the LEVEL in the top, middle of the screen
+		#Display the level in the top, middle of the screen
 		self.level_rect = self.level_image.get_rect()
 		self.level_rect.centerx = self.screen_rect.centerx
 		self.level_rect.top = self.screen_rect.top
@@ -64,12 +66,3 @@ class Scoreboard():
 		self.screen.blit(self.info_image, self.info_rect)
 		self.screen.blit(self.hi_score_image, self.hi_score_rect)
 		self.screen.blit(self.level_image, self.level_rect)
-		
-
-		
-	
-		
-		
-		
-		
-		
