@@ -56,4 +56,5 @@ See the relevant files for more detailed annotations. My project is made up of m
 - The game only works for the specified screen dimensions. If changed, there will be large spaces without bricks.
 - Only one type of brick.
 - High score does not save in between executions of the game. In other words, the high score is the highest score of the current instance of the game running and not the highest score of all of the instances of the game that have run. (I hope that makes sense)
-- Game over message is shown when all lives are lost but the game does not reset the statistics if the player attempts to have another go; Nor does the game end, the player must exit manually - see "Exiting the game". (currently trying to fix this for 11/03/2020 - I will commit my changes in time for my the interview tomorrow)!
+### This is now fixed (10/03/2020): 
+- Game over message is shown when all lives are lost but the game does not reset the statistics if the player attempts to have another go; Nor does the game end, the player must exit manually - see "Exiting the game". (currently trying to fix this for 11/03/2020 - I will commit my changes in time for my the interview tomorrow)! 
