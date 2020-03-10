@@ -15,7 +15,7 @@ class GameStats():
 		self.hi_score = 0
 		
 	def reset_stats(self):
-		"""These stats can change during the game."""
+		#These stats can change during the game
 		self.lives_left = self.settings.lives
 		self.score = 0
 		self.level = 1
