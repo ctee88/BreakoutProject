@@ -17,7 +17,7 @@ class Ball(pygame.sprite.Sprite):
 		self.center_ball(paddle)		
 		self.colour = settings.ball_colour
 		
-		#Construct screen width to see if touches the edges
+		#Construct screen width to see if ball touches the edges
 		self.screen_width = settings.screen_width
 		
 		#Movement flag
