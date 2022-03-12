@@ -2,6 +2,8 @@
 
 Play my version of the famous Arkanoid/Breakout game!
 
+![Gameplay](images/breakout_running.png)
+
 # Features
 - Paddle and a ball where the ball can destroy the bricks in a wall
 
